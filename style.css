@@ -39,9 +39,15 @@ color:#fff;
 }
 
 .input button{
-   color:#fff;
-   border: 1px solid #fff;
-   border-radius: 5px;
+   border: 1px solid #19171D;
+   border-radius: 20px;
+   width: 20px;
+   background-color: #2F2F30;
+}
+
+.fas fa-paper-plane{
+    color:#fff;
+    width: 10px;
 }
 
 
