@@ -12,7 +12,7 @@ list-style: none;
 
 .chat ul{
     list-style:none;
-    grid-row:1/span 3;
+    height: 90%;
 }
 
 .fullchat{
