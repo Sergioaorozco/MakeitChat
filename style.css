@@ -12,9 +12,35 @@ list-style: none;
 
 .chat ul{
     list-style:none;
+    grid-row:1/span 3;
+}
+
+.fullchat{
+    display:grid;
+    background-color: #19171D;
+    height: 100vh;
+}
+
+.input {
+    background-color: #222529;
+    border: 1px solid #747779;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin: 0; 
 }
 
 
-.body{
+body{
+    color: #fff;
     background-color: #19171D;
 }
+
+.channels{
+    color:#757477;
+}
+
+.messages{
+    grid-column: 2 / span 3;
+    border-left: 1px solid #2F2F30;
+}
+
