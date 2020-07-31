@@ -12,12 +12,11 @@ list-style: none;
 
 .chat ul{
     list-style:none;
-    height: 90%;
+    
 }
 
 .fullchat{
     display:grid;
-    background-color: #19171D;
     height: 100vh;
 }
 
@@ -27,6 +26,21 @@ list-style: none;
     border-radius: 5px;
     padding: 10px 5px;
     margin: 0; 
+    display: flex;
+    justify-content: space-around;
+}
+
+.input input{
+border:none;
+background:transparent;
+width:90%;
+color:#fff;
+
+}
+
+.input button{
+    background-color: transparent;
+
 }
 
 
@@ -40,7 +54,11 @@ body{
 }
 
 .messages{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     grid-column: 2 / span 3;
     border-left: 1px solid #2F2F30;
+
 }
 
