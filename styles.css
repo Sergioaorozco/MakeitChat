@@ -30,17 +30,18 @@ padding-inline-start:0px;
     background-color: #222529;
     border: 1px solid #747779;
     border-radius: 5px;
-    padding: 10px 5px;
+    padding: 5px;
     margin: 0; 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: auto;
+    margin-bottom:5px;
 }
 
 .input input{
 border:none;
 background:transparent;
-width:90%;
+width:100%;
 color:#fff;
 
 }
@@ -63,6 +64,9 @@ color:#fff;
 body{
     color: #fff;
     background-color: #19171D;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1em;
 }
 
 .channels{
@@ -82,5 +86,35 @@ body{
     background-color:#1164A3;
     color:#fff;
     width:auto;
-    height:20px;
+    height:1.8em;
+}
+
+.contact7{
+width:40px;
+height: 40px;
+border-radius:6px;
+margin-right: 10px;
+}
+
+.cwrapper{
+    display:flex;
+    height: 40px;
+    width: auto;
+    margin: 20px 0;
+}
+
+
+div h4, p{
+display:inline;
+margin: 0;
+font-size: 0.8em;
+}
+
+.c7block{
+    display: block;
+}
+
+p.chour {
+    color: #747779;
+    font-size: .8em;
 }
