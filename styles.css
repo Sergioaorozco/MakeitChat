@@ -12,7 +12,8 @@ padding-inline-start:0px;
 }
 
 .channels li{
-    margin-top: 5px;
+    margin: 5px 0;
+    padding-left: .8em;
     }
     
 
