@@ -88,7 +88,14 @@ body{
     color:#fff;
     width:auto;
     height:1.8em;
+    cursor: pointer;
 }
+
+
+.c2:hover,.c3:hover,.c4:hover,.c5:hover,.c6:hover,.c7:hover,.c8:hover{
+    background-color:#2F2F30;
+    cursor:pointer;
+    }
 
 .contact7{
 width:40px;
