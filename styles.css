@@ -8,6 +8,7 @@
 
 .channels {
 list-style: none;
+text-decoration: none;
 padding-inline-start:0px;
 }
 
@@ -59,8 +60,8 @@ color:#fff;
 .Submit-btn:hover{
     border:2px solid #fff;
     color:#fff;
-
 }
+
 
 body{
     color: #fff;
@@ -68,6 +69,7 @@ body{
     margin: 0;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 1em;
+    
 }
 
 .channels{
@@ -83,18 +85,16 @@ body{
 
 }
 
-.c1{
+.selected{
     background-color:#1164A3;
     color:#fff;
     width:auto;
     height:1.8em;
-    cursor: pointer;
 }
 
 
 .list-item:hover{
     background-color:#2F2F30;
-    cursor:pointer;
     }
 
 .profilepic{
@@ -118,11 +118,16 @@ margin: 0;
 font-size: 0.8em;
 }
 
-.c7block{
+.message{
     display: block;
 }
 
 p.chour {
     color: #747779;
     font-size: .8em;
+}
+
+
+a:link{
+    text-decoration:none;
 }
