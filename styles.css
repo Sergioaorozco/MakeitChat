@@ -6,12 +6,12 @@
 /* #1164A3 */
 
 
-.channels ul{
+.channels {
 list-style: none;
 padding-inline-start:0px;
 }
 
-.channels li{
+.channels .list-item{
     margin: 5px 0;
     padding-left: .8em;
     }
@@ -97,7 +97,7 @@ body{
     cursor:pointer;
     }
 
-.contact7{
+.profilepic{
 width:40px;
 height: 40px;
 border-radius:6px;
