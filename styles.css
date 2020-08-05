@@ -17,7 +17,7 @@ padding-inline-start:0px;
     }
     
 
-.chat ul{
+.chat {
     list-style:none;
     
 }
@@ -92,13 +92,13 @@ body{
 }
 
 
-.c2:hover,.c3:hover,.c4:hover,.c5:hover,.c6:hover,.c7:hover,.c8:hover{
+.list-item:hover{
     background-color:#2F2F30;
     cursor:pointer;
     }
 
 .profilepic{
-width:40px;
+width:40px;s
 height: 40px;
 border-radius:6px;
 margin-right: 10px;
