@@ -1,79 +1,68 @@
 // 1. imprimir los mensajes desde un array.
 // 2. Cuando se presione enviar y la caja de texto tenga algo, agregar el mensaje al array y al DOM
 
-const $input = $('.txtmessage');
-const $send = $('.Submit-btn');
-const $chat = $('.chat');
+const $form = document.querySelector("form");
+const $input = document.querySelector("#txtmessage");
+const $send = document.querySelector(".Submit-btn");
+const $chat = document.querySelector(".chat");
+
+$form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const value = $input.value;
+
+  if (value !== "") {
+    const now = new Date();
+    const message = {
+      time: `${now.getHours()}:${now.getMinutes()}`,
+      content: value,
+      author: {
+        name: "Sergio Orozco",
+        image: "images/contacto3.jpg",
+      },
+    };
+    printMessage(message);
+    messages.push(message);
+
+    $input.value = "";
+  }
+});
 
 const messages = [
   {
-        {
-    time: '19:23',
-    content: value,
+    time: "16:25",
+    content: "Hola,¿cómo están todo en orden?",
     author: {
-      name: "Sergio Orozco",
-      image: "images/contacto3.jpg",
+      name: "Laura Buitrago",
+      image: "images/contacto1.jpg",
     },
   },
   {
-    time: '19:27',
-    content: value,
+    time: "16:28",
+    content: "Hola,¿cómo están todo en orden?",
     author: {
-      name: "Andrés Ochoa",
-      image: "images/contacto4.jpg",
-    },
-  },
-  {
-    time: '19:23',
-    content: value,
-    author: {
-      name: "Carolina Buitrago",
+      name: "Laura Buitrago",
       image: "images/contacto2.jpg",
     },
   },
-}
 ];
 
-// $(document).ready(function(){
-//     $("form").submit(function(){
-//         e.preventDefault();
-//     });
-
-//     $input.on("click", function() {
-//      const value = $input.value;
-//      if(value!==""){
-//          const message = {
-//              time: '19:23',
-//              content: value,
-//              author:{
-//                  name:"Sergio Orozco",
-//                  image:"images/contacto3.jpg",
-//              }
-//          }
-// printMessage(message)
-//      };
 function printMessage(message) {
   const { author, time, content } = message;
+
   const template = `<li>
-        <div class="cwrapper">
-        <div>
-        <img class="profilepic" src="${author.image}" alt="C7">
-        </div>
-        <div class="profilename">
-        <h4>${author.name}</h4>
-        <p class="profilehour">${time}</p>
-        <p class="profilemessage">${content}</p>
-        </div>
-        </div>
-        
-        </li>`;
-
-
-  chat.innerHTML = template;
-
+  <div class="cwrapper">
+    <div>
+      <img class="profilepic" src="${author.image}" alt="C7">
+    </div>
+    <div>
+      <h4>${author.name}</h4>
+      <p class="profilehour">${time}</p>
+      <p class="profilemessage">${content}</p>
+    </div>
+</li>`;
+  $chat.innerHTML += template;
 }
 
-messages.forEach(message){
-  printMessage(message)
-}
-
+messages.forEach((message) => {
+  printMessage(message);
+});
