@@ -5,7 +5,7 @@ const $chat = $(".chat");
 $form.on("submit", (event) => {
   event.preventDefault();
   var value = $input.val();
-  console.log(value);
+  //console.log(value);
 
   if (value !== "") {
     const now = new Date();
