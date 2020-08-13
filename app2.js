@@ -59,13 +59,8 @@ function printMessage(message) {
     </div>
 </li>`;
   $chat.html(template);
-  //$chat.html(template);
 }
 
-$.each(messages, (message) => {
+messages.forEach((message) => {
   printMessage(message);
 });
-
-//messages.forEach((message) => {
-//printMessage(message);
-//});
