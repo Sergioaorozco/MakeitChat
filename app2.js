@@ -4,8 +4,8 @@ $(document).ready(function () {
   //   const $send = $(".Submit-btn");
   const $chat = $(".chat");
 
-  $form.submit((event) => {
-    event.preventDefault();
+  $form.submit((printMessage) => {
+    printMessage.preventDefault();
     const value = $input.val();
 
     if (value !== "") {
@@ -57,7 +57,7 @@ $(document).ready(function () {
             <p class="profilemessage">${content}</p>
           </div>
       </li>`;
-    $chat.text() += template;
+    $chat.html(template);
   }
 
   messages.forEach((message) => {
