@@ -1,4 +1,3 @@
-//$(document).ready(function () {
 const $form = $("form");
 const $input = $("#txtmessage");
 const $chat = $(".chat");
@@ -58,7 +57,7 @@ function printMessage(message) {
       <p class="profilemessage">${content}</p>
     </div>
 </li>`;
-  $chat.html(template);
+  $chat.append(template);
 }
 
 messages.forEach((message) => {
