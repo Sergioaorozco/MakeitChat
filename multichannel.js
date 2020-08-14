@@ -24,6 +24,25 @@ $form.on("submit", (event) => {
   }
 });
 
+const messages = [
+  {
+    time: "16:25",
+    content: "Hola,¿cómo están todo en orden?",
+    author: {
+      name: "Laura Buitrago",
+      image: "images/contacto1.jpg",
+    },
+  },
+  {
+    time: "16:28",
+    content: "Hola,¿cómo están todo en orden?",
+    author: {
+      name: "Carlos Andrés",
+      image: "images/contacto2.jpg",
+    },
+  },
+];
+
 const channels = [
   {
     name: "Courses",
@@ -68,6 +87,20 @@ const channels = [
     ],
   },
 ];
+
+let current = null;
+const $container = $(".channels");
+const $item = $(".list-item");
+channels.forEach((element, index) => {
+  const $li = document.createElement("li");
+
+  $item.click(() => {
+    current = index;
+    console.log("click" + index, element);
+  });
+  $li.html(element);
+  $container.append($li);
+});
 
 function printMessage(message) {
   const { author, time, content } = message;
