@@ -24,22 +24,48 @@ $form.on("submit", (event) => {
   }
 });
 
-const messages = [
+const channels = [
   {
-    time: "16:25",
-    content: "Hola,¿cómo están todo en orden?",
-    author: {
-      name: "Laura Buitrago",
-      image: "images/contacto1.jpg",
-    },
+    name: "Courses",
+    messages: [
+      {
+        time: "16:25",
+        content: "Hola,¿cómo están todo en orden?",
+        author: {
+          name: "Laura Buitrago",
+          image: "images/contacto1.jpg",
+        },
+      },
+      {
+        time: "16:28",
+        content: "Hola,¿cómo están todo en orden?",
+        author: {
+          name: "Laura Buitrago",
+          image: "images/contacto2.jpg",
+        },
+      },
+    ],
   },
   {
-    time: "16:28",
-    content: "Hola,¿cómo están todo en orden?",
-    author: {
-      name: "Carlos Andrés",
-      image: "images/contacto2.jpg",
-    },
+    name: "Css",
+    messages: [
+      {
+        time: "16:25",
+        content: "Hola,¿cómo están todo en orden?",
+        author: {
+          name: "Laura Buitrago",
+          image: "images/contacto1.jpg",
+        },
+      },
+      {
+        time: "16:28",
+        content: "Hola,¿cómo están todo en orden?",
+        author: {
+          name: "Laura Buitrago",
+          image: "images/contacto2.jpg",
+        },
+      },
+    ],
   },
 ];
 
