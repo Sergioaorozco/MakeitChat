@@ -21,6 +21,7 @@ padding-inline-start:0px;
 .chat {
     list-style:none;
     overflow-y: auto;
+    
      
 }
 
@@ -89,7 +90,7 @@ body{
 
 .channels{
     color:#757477;
-}
+    }
 
 .messages{
     display: flex;
@@ -97,6 +98,8 @@ body{
     justify-content: flex-end;
     grid-column: 2 / span 3;
     border-left: 1px solid #2F2F30;
+    overflow: auto;
+    
 
 }
 
